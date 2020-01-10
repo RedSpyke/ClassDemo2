@@ -1,12 +1,30 @@
 package com.company;
 
+import javax.sound.midi.Soundbank;
+
 public class bankAccount {
 
     private int accountNumber;
     private double balance;
     private String customerName;
     private String email;
-    private int phoneNumber;
+    private String phoneNumber;
+
+    public bankAccount (int accountNumber, double balance, String customerName, String email, String phoneNumber){
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+        this.customerName = customerName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+    }
+
+    public void displayAccountInfo (){
+        System.out.println("Account number " + accountNumber);
+        System.out.println("Balance " + balance);
+        System.out.println("Customer name " + customerName);
+        System.out.println("Customer email address " + email);
+        System.out.println("Customer phone number " + phoneNumber);
+    }
 
     public void setAccountNumber (int accountNumber){
         this.accountNumber = accountNumber;
@@ -32,10 +50,10 @@ public class bankAccount {
     public String getEmail (){
         return email;
     }
-    public void setPhoneNumber (int phoneNumber){
+    public void setPhoneNumber (String phoneNumber){
         this.phoneNumber = phoneNumber;
     }
-    public int getPhoneNumber (){
+    public String getPhoneNumber (){
         return  phoneNumber;
     }
     public void depositFunds (double deposit){

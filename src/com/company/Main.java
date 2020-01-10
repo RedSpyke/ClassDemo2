@@ -32,13 +32,14 @@ public class Main {
         System.out.println("division = " + calculator.getDivisionResult());
 
  */
-bankAccount bankAccount1 = new bankAccount();
+bankAccount bankAccount1 = new bankAccount(12345, 0.0 , "Jeo", "geo.bob@gmail.com", "07345864");
 bankAccount1.setBalance(1000);
 System.out.println(bankAccount1.getBalance());
 bankAccount1.depositFunds(300);
 System.out.println(bankAccount1.getBalance());
 bankAccount1.withdrawFunds(1300);
 System.out.println(bankAccount1.getBalance());
+bankAccount1.displayAccountInfo();
 
 
 }
