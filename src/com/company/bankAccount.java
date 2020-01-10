@@ -3,7 +3,7 @@ package com.company;
 public class bankAccount {
 
     private int accountNumber;
-    private int balance;
+    private double balance;
     private String customerName;
     private String email;
     private int phoneNumber;
@@ -17,7 +17,7 @@ public class bankAccount {
     public void setBalance (int balance){
         this.balance = balance;
     }
-    public int getBalance (){
+    public double getBalance (){
         return balance;
     }
     public void setCustomerName (String customerName){
@@ -38,11 +38,11 @@ public class bankAccount {
     public int getPhoneNumber (){
         return  phoneNumber;
     }
-    public void depositFunds (int deposit){
+    public void depositFunds (double deposit){
         balance += deposit;
         System.out.println("new balance is " + balance);
     }
-    public void withdrawFunds (int withdraw){
+    public void withdrawFunds (double withdraw){
         if (balance - withdraw < 0){
             System.out.println("Insufficient funds ");;
         }
