@@ -1,7 +1,5 @@
 package com.company;
 
-import javax.sound.midi.Soundbank;
-
 public class bankAccount {
 
     private int accountNumber;
@@ -70,6 +68,4 @@ public class bankAccount {
         }
         System.out.println("new balance is " + balance);
     }
-
-
 }

@@ -32,6 +32,7 @@ public class Main {
         System.out.println("division = " + calculator.getDivisionResult());
 
  */
+/*
 bankAccount bankAccount1 = new bankAccount(12345, 0.0 , "Jeo", "geo.bob@gmail.com", "07345864");
 bankAccount1.setBalance(1000);
 System.out.println(bankAccount1.getBalance());
@@ -40,6 +41,15 @@ System.out.println(bankAccount1.getBalance());
 bankAccount1.withdrawFunds(1300);
 System.out.println(bankAccount1.getBalance());
 bankAccount1.displayAccountInfo();
+
+
+ */
+
+    VipCustomer person1  = new VipCustomer();
+    VipCustomer person2 = new VipCustomer("Alex", 4000);
+        System.out.println("person 1 credit limit is "+ person1.getCreditLimit());
+        System.out.println("person 2 credit limit is "+ person2.getCreditLimit());
+
 
 
 }
